@@ -307,6 +307,8 @@ public class UCropActivity extends AppCompatActivity {
             wrapper.setVisibility(View.VISIBLE);
             LayoutInflater.from(this).inflate(R.layout.ucrop_controls, wrapper, true);
 
+            findViewById(R.id.wrapper_states).setVisibility(View.GONE);
+
             mControlsTransition = new AutoTransition();
             mControlsTransition.setDuration(CONTROLS_ANIMATION_DURATION);
 
